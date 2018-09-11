@@ -5,9 +5,9 @@ app.use(bodyParser.json());
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 require('./server/config/mongoose.js');
-require('./server/models/Apps.js')
+require('./server/models/Cermaics.js')
 require('./server/config/routes.js')(app)
-require('./server/controllers/appcontrollers.js')
-app.listen(8000, function() {
+require('./server/controllers/ceramiccontrollers.js')
+app.listen(8000, ()=> {
     console.log("listening on port 8000");
-})
+});
