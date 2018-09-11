@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Ceramic = mongoose.model('Cermamic');
+const Ceramic = mongoose.model('Ceramic');
 const Cart = mongoose.model('Cart');
 module.exports = {
     index:(req,res)=>{
