@@ -1,8 +1,9 @@
 const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const app = express();
 
+app.use(express.static(__dirname+'/client/build/'))
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
