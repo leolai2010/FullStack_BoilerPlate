@@ -4,7 +4,7 @@ module.exports = (app)=>{
     app.get('/ceramics', (req,res)=>{
         Ceramic.index(req,res);
     });
-    app.get('/new/ceramic', (req,res)=>{
+    app.post('/new/ceramic', (req,res)=>{
         Ceramic.create(req,res);
     });
     app.get('/show/ceramic/:id', (req,res)=>{

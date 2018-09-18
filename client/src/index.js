@@ -7,8 +7,6 @@ import promise from 'redux-promise';
 import registerServiceWorker from './registerServiceWorker';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery/dist/jquery';
-import Popper from 'popper.js/dist/popper';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import reducers from './reducers';

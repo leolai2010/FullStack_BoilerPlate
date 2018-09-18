@@ -6,19 +6,20 @@ import _ from 'lodash';
 
 class CeramicsIndex extends Component {
     componentDidMount() {
-        this.props.fetchCeramics()
+        this.props.fetchCeramics();
     }
     renderCeramics() {
         return _.map(this.props.ceramics, ceramic=>{
             return(
-                <li className="list-group-item" key={ceramic.id}>
-                    <p>{ceramic.name}</p>
+                <li className="list-group-item" key={ceramic._id}>
+                    {ceramic.name}
                 </li>
             );
         });
     }
-    render() {
+    render() {            
         return(
+
             <div>
                 <ul className="list-group">
                     {this.renderCeramics()}
@@ -28,6 +29,6 @@ class CeramicsIndex extends Component {
     }
 }
 function mapStateToProps(state){
-    return { posts: state.posts };
+    return { ceramics: state.ceramics };
 }
 export default connect(mapStateToProps, {fetchCeramics})(CeramicsIndex);

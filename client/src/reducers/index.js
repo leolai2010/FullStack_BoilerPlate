@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import CeramicReducer from './reducer_posts';
+import CeramicReducer from './reducers';
 import { reducer as formReducer } from 'redux-form';
 
  const rootReducer = combineReducers({
